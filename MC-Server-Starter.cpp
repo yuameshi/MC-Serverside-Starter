@@ -47,7 +47,7 @@ int main() {
 		prop = "Real Time";
 	}
 	prop = "wmic process where name='java.exe' call SetPriority \"" + prop + "\"";
-	string cmd = "start cmd /k \"java -Xmx" + memory + " -Xms" + memory + " -jar " + server + " && pause\"";
+	string cmd = "start cmd /k \"java -Xmx" + memory + " -jar " + server + " && pause\"";
 	cout << "==============Read Complete==============" << endl;
 	cout << "================Starting=================" << endl;
 	cout << "COMMAND:" + cmd << endl;
